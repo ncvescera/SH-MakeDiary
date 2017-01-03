@@ -2,13 +2,13 @@
 namefile="diary" #absolute file path
 
 function log {
-	echo "$1 [`date`]" >> $namefile
+	echo "[`date`] $1" >> $namefile
 }
 function newtitle {
 	echo -e "\t--- $1 ---" >> $namefile #-e enable escape chars
 }
 function end {
-	echo "Done ! [`date`] " >> $namefile
+	echo "[`date`] Done !" >> $namefile
 }
 function menu {
 	echo "MakeDiary help menu:"
